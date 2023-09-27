@@ -196,9 +196,9 @@ function updateCart() {
         desconto = subtotal * 0.1;
         total = subtotal - desconto;
 
-        q('.subtotal').innerHTML = `R$ ${subtotal.toFixed(2)} `;
-        q('.desconto').innerHTML = `R$ ${desconto.toFixed(2)} `;
-        q('.total').innerHTML = `R$ ${total.toFixed(2)} `;
+        q('.subtotal .spanMoney').innerHTML = `R$ ${subtotal.toFixed(2)} `;
+        q('.desconto .spanMoney').innerHTML = `R$ ${desconto.toFixed(2)} `;
+        q('.total .spanMoney').innerHTML = `R$ ${total.toFixed(2)} `;
     } else {
         q('aside').classList.remove('show');
         q('aside').style.left = '100vw';
